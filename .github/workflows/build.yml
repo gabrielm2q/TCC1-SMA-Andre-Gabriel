@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - working-directory: ./code/even_odd/
+      - working-directory: TCC1-SMA-Andre-Gabriel/code/even_odd/
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
