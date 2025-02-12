@@ -36,4 +36,4 @@ jobs:
         working-directory: code/even_odd
         env: 
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectBaseDir=~/code/even_odd/ -Dsonar.sources=. -Dsonar.projectKey=tcc-sma-andre-gabriel_building-blocks
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectBaseDir=~/code/even_odd/ -Dsonar.sources=. -Dsonar.projectKey=tcc-sma-andre-gabriel_building-blocks -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
