@@ -33,7 +33,7 @@ jobs:
       - name: change dir
         run: cd code/even_odd
       - name: Build and analyze
-        working-directory: ~/code/even_odd
+        working-directory: code/even_odd
         env: 
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectBaseDir=~/code/even_odd/ -Dsonar.sources=. -Dsonar.projectKey=tcc-sma-andre-gabriel_building-blocks
